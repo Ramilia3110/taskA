@@ -1,0 +1,87 @@
+.cover {
+  min-height: 100vh;
+  background: #000;
+  background-size: cover;
+}
+.cover-container {
+  display: flex;
+  padding: 8rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.leftSide {
+  flex: 1;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  line-height: 3.5rem;
+
+  .cover-content {
+    margin-right: 5rem;
+    h2 {
+      font-size: 2.7rem;
+    }
+    p {
+      color: #4ca445;
+      font-size: 1.5rem;
+    }
+    .cover__btn {
+      padding: 1rem 2.3rem;
+      font-size: 1.2rem;
+      border-radius: 1.2rem;
+      border: #4ca445;
+      cursor: pointer;
+      &:hover {
+        background-color: #4ca445;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.rightSide {
+  flex: 1;
+  max-width: 30rem;
+  min-width: 20rem;
+  height: 30rem;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+}
+
+.rightSide i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #4ca445;
+  transition: 0.5s;
+}
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .cover-container {
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cover-content {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
