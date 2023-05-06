@@ -1,0 +1,101 @@
+.home {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.home h2 {
+  padding-top: 5rem;
+  font-weight: 200;
+  color: #4ca445;
+  font-size: 2rem;
+}
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hex-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.home-container .hexagon {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  margin: 50px 20px 70px;
+}
+
+.home-container .hexagon::before {
+  content: " ";
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  height: 60px;
+  background: radial gradient (rgba(0, 0, 0, 0.15), transparent, transparent);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.home-container .hexagon:hover::before {
+  opacity: 0.8;
+  transition: scale(0.8);
+}
+
+.home-container .hexagon .shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+  transition: 0.5s;
+}
+
+.home-container .hexagon:hover .shape {
+  transform: translateY(-30px);
+}
+
+.home-container .hexagon .shape img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-container .hexagon .shape .content {
+  h2 {
+    font-size: 1.5rem;
+    color: #4ca445;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background: linear-gradient(45deg, #0e1111, rgba(0, 0, 0, 0.5));
+  color: #fff;
+  opacity: 0;
+  transition: 0.5s;
+  padding-bottom: 5rem;
+}
+
+.home-container .hexagon:hover .shape .content {
+  opacity: 1;
+}
