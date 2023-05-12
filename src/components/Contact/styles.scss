@@ -1,0 +1,156 @@
+.contact {
+  color: #4ca445;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+form {
+  background: rgba(2, 5, 8, 0.8);
+  width: 640px;
+  margin: 50px auto;
+  max-width: 97%;
+  border-radius: 4px;
+  padding: 55px 30px;
+}
+
+form .title h2 {
+  letter-spacing: 6px;
+  border-bottom: 1px solid white;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-bottom: 3.5rem;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+form .half {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .half .item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 48%;
+}
+
+form label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input {
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 16px;
+  width: 90%;
+  height: 44px;
+  background: transparent;
+  font-size: 17px;
+}
+
+form .full {
+  margin-bottom: 24px;
+}
+
+form .full textarea {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 16px;
+  width: 95%;
+  height: 200px;
+  font-size: 17px;
+}
+
+form .action {
+  margin-bottom: 32px;
+}
+
+form .action input {
+  background: transparent;
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  height: 44px;
+  letter-spacing: 3px;
+  outline: 0;
+  padding: 0 20px 0 22px;
+  margin-right: 10px;
+}
+
+form .action input[type="submit"] {
+  background: #4ca445;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: #4ca445;
+  }
+}
+form .action input[type="reset"] {
+  color: #fff;
+}
+form .icons a {
+  width: 100%;
+  margin-right: 1.3rem;
+  transition: 0.5s;
+}
+
+form .icons a .logo {
+  line-height: 36px;
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: #fff;
+}
+
+form .icons a .logo:hover {
+  transform: translateY(-5px);
+  color: #4ca445;
+}
+
+form .half .item input:focus,
+form .full textarea:focus,
+form .action input[type="reset"]:hover {
+  background: #4ca445;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  form .title h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  form .half {
+    flex-direction: column;
+    justify-content: center;
+  }
+  form .half .item {
+    width: 25rem;
+  }
+  form .half .item input {
+    padding: 1rem;
+    height: 1.5rem;
+  }
+
+  form .full textarea {
+    width: 22.5rem;
+  }
+  form .action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  form .action input {
+    margin-bottom: 10px;
+    width: 25rem;
+    padding: 1rem;
+  }
+}

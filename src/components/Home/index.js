@@ -6,7 +6,7 @@ import cover3 from "../../assets/images/cover3.jpg";
 
 export const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <h2>ATech makes your website look amazing</h2>
       <div className="home-container">
         <div className="hex-container">

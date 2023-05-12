@@ -4,7 +4,7 @@ import v from "../../assets/videos/v.mp4";
 
 export const Cover = () => {
   return (
-    <div className="cover">
+    <div className="cover" id="main">
       <div className="cover-container">
         <div className="leftSide">
           <div class="cover-content">
